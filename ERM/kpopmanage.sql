@@ -1,0 +1,23 @@
+CREATE DATABASE management;
+USE management;
+
+CREATE TABLE Idol (
+    IdolID INT AUTO_INCREMENT PRIMARY KEY,
+    StageName VARCHAR(100) NOT NULL,
+    RealName VARCHAR(100) NOT NULL,
+    Nationality VARCHAR(100) NOT NULL,
+    DebutYear INT NOT NULL,
+    GroupID INT,
+    FOREIGN KEY (GroupID) REFERENCES Group_Table(GroupID)
+);
+
+
+CREATE TABLE Group(
+    GroupID INT AUTO_INCREMENT PRIMARY KEY,
+    GroupName VARCHAR(100) NOT NULL,
+    Agency VARCHAR(100) NOT NULL,
+    
+
+
+
+);
